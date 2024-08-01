@@ -1,0 +1,15 @@
+{
+  "name": "developer-quiz",
+  "version": "1.0.0",
+  "description": "'completing a developer quiz'",
+  "main": "index.html",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": {
+    "github":"MM-Maketela",
+    "name":"Mafa",
+    "surname":"Maketela"
+  },
+  "license": "ISC"
+}

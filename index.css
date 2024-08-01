@@ -1,0 +1,146 @@
+:root {
+  --header-size: 13.5vh;
+  --paragraph-color: rgba(0, 0, 0, 0.5);
+  --heading-color: rgba(0, 0, 0, 0.5);
+  --title-color: rgba(0, 0, 0, 0.5);
+  --title-size: 1rem;
+  --heading-size: 2rem;
+  --paragraph-size: 2rem;
+  --section-color-dark-light: rgba(128, 128, 128, 0.25);
+  --section-color-light: rgba(128, 128, 128, 0.05);
+  --card-size: 25rem;
+  --card-dark-color: rgba(128, 128, 128, 0.8);
+}
+
+body {
+  position: relative;
+  margin: 0px;
+  background-color: white;
+  text-align: center;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* header  */
+h1 {
+  margin: 0px;
+  padding: 0px;
+  color: black;
+}
+.header {
+  position: fixed;
+  top: 0px;
+  left: calc(15% / 2);
+  right: calc(15% / 2);
+  height: var(--header-size);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-inner-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-inline: auto;
+  align-items: center;
+  color: red;
+}
+.page-size {
+  width: 85%;
+  margin-inline: auto;
+}
+.menu {
+  width: calc(var(--header-size) * 0.45);
+  height: calc(var(--header-size) * 0.3);
+}
+
+.list-menu-bars {
+  list-style: none;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.menu-bar {
+  height: 2px;
+  width: 100%;
+  background-color: black;
+}
+.section-bg-color-dark {
+  background-color: var(--section-color-dark-light);
+}
+.section-bg-color-light {
+  background-color: var(--section-color-light);
+}
+
+/* hero section  */
+.hero {
+  height: calc(100vh - var(--header-size));
+  margin-top: var(--header-size);
+}
+.paragraph-size {
+  width: 60%;
+  color: var(--paragraph-color);
+}
+
+/* next section */
+.card-light {
+  background-color: inherit;
+  height: var(--card-size);
+  text-align: start;
+  padding-inline: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+.card-dark {
+  background-color: var(--card-dark-color);
+  height: var(--card-size);
+}
+.n-by-two-grid {
+  margin-top: 4rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.button-text{
+    color:white;
+    background-color: var(--card-dark-color);
+   padding-block: .4rem;
+   padding-inline: 2.5rem;
+   width: fit-content;
+   border-radius: 10px;
+}
+.card-paragraph{
+    color: var(--paragraph-color);
+}
+.grid-container{
+    border: 2px solid red;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows:repeat(18, 1fr) ;
+    grid-template-columns: repeat(18, 1fr); 
+    grid-gap: 10px;
+    
+}
+.card-one{
+    border: 2px solid red;
+    grid-column: 3/6;
+    grid-row: 3/ 11 ;
+}
+
+.selector-card{
+
+    border: 2px solid red;
+    grid-column: 6/12;
+    grid-row: 2/ 5 ;
+    
+}
